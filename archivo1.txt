@@ -1,0 +1,39 @@
+migue@MSI MINGW64 ~
+$ git  --version
+git version 2.35.1.windows.2
+
+migue@MSI MINGW64 ~
+$ git config --global user.name "Miguel Brown"
+
+migue@MSI MINGW64 ~
+$ git config --global user.email browncoloma@gmail.com
+
+migue@MSI MINGW64 ~
+$ git config --global core.editor "code --wait"
+
+migue@MSI MINGW64 ~
+$ got config --global -e
+bash: got: command not found
+
+migue@MSI MINGW64 ~
+$ git config --global -e
+
+migue@MSI MINGW64 ~
+$ git config --global core.autocrlf true (windows) input (lunix mac)
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero
+$ git init  (git push para subir a servidor despues de commit)
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git add archivo1.txt
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   archivo1.txt
+
