@@ -115,3 +115,40 @@ $ git commit -m "agregando file gitingnore"
 [master 8ff6835] agregando file gitingnore
  2 files changed, 65 insertions(+)
  create mode 100644 .gitignore
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   readming.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git status -s
+ M .gitignore
+ M readming.txt
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git add .gitignore
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git status -s
+M  .gitignore
+ M readming.txt
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git add readming.txt
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git status -s
+M  .gitignore
+M  readming.txt
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git commit -m "status corto"
+[master 3689728] status corto
+ 2 files changed, 10 insertions(+), 1 deletion(-)
