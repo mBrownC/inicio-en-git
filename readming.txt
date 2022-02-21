@@ -163,3 +163,16 @@ d021298 renombrar nuevamente
 64a6d03 eliminacion de archivo
 3ca4497 Agregue linea con commit en el istrucctivo
 343d116 creacion de txt con instrucciones
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git branch
+* master
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git checkout -b nombre_de_rama
+Switched to a new branch 'nombre_de_rama'
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (nombre_de_rama)
+$ git branch
+  master
+* nombre_de_rama
