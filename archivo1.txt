@@ -37,3 +37,8 @@ Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
         new file:   archivo1.txt
 
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git add archivo1.txt archivo2.txt
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git commit -m "creacion de txt con instrucciones"
