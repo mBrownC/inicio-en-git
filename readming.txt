@@ -42,3 +42,67 @@ $ git add archivo1.txt archivo2.txt
 
 migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
 $ git commit -m "creacion de txt con instrucciones"
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ mv archivo1.txt scrip.txt
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    archivo1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        scrip.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git add archivo1.txt scrip.txt
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    archivo1.txt -> scrip.txt
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git commit -m "renombrar archivo"
+[master 3c1c078] renombrar archivo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename archivo1.txt => scrip.txt (100%)
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git mv scrip.txt readming.txt
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git commit -m "renombrar nuevamente"
+[master d021298] renombrar nuevamente
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename scrip.txt => readming.txt (100%)
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ touch .gitignore
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readming.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
