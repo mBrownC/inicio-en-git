@@ -176,3 +176,76 @@ migue@MSI MINGW64 ~/workspace/git-desde-cero (nombre_de_rama)
 $ git branch
   master
 * nombre_de_rama
+migue@MSI MINGW64 ~/workspace/git-desde-cero (nombre_de_rama)
+$ cat readming.txt
+migue@MSI MINGW64 ~
+$ git  --version
+git version 2.35.................
+Switched to a new branch 'nombre_de_rama'
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (nombre_de_rama)
+$ git branch
+  master
+* nombre_de_rama
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (nombre_de_rama)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (nombre_de_rama)
+$ git checkout master
+Switched to branch 'master'
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ cat readming.txt
+migue@MSI MINGW64 ~
+$ git  --version
+git version 2.35.1.windows.2
+..........
+3ca4497 Agregue linea con commit en el istrucctivo
+343d116 creacion de txt con instrucciones
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git merge nombre_de_rama
+Updating 193f6b3..f20dd34
+Fast-forward
+ readming.txt | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git remote add origin https://github.com/mBrownC/inicio-en-git.git
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/mBrownC/inicio-en-git.git'
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git push -u origin master
+
+fatal: User canceled device code authentication
+
+
+migue@MSI MINGW64 ~/workspace/git-desde-cero (master)
+$ git push -u origin master
+Enumerating objects: 30, done.
+Counting objects: 100% (30/30), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (24/24), done.
+Writing objects: 100% (30/30), 3.47 KiB | 1.74 MiB/s, done.
+Total 30 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/mBrownC/inicio-en-git.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
