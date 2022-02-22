@@ -187,6 +187,7 @@ migue@MSI MINGW64 ~/workspace/git-desde-cero (nombre_de_rama)
 $ git branch
   master
 * nombre_de_rama
+as
 
 migue@MSI MINGW64 ~/workspace/git-desde-cero (nombre_de_rama)
 $ git checkout main
